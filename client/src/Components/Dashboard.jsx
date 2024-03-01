@@ -9,7 +9,7 @@ const Dashboard = () => {
         Axios.get('http://localhost:5000/auth/verify')
         .then(res=>{
             if(res.data.status){
-                
+                alert("Welcome to Dashboard")
             }else{
                 navigate('/home')
             }
